@@ -97,7 +97,7 @@ pipeline {
                         set -e  
 
                         # Run TruffleHog, save full JSON output to file
-                        trufflehog filesystem  .  -x .exclude.txt  --fail --no-update --json > trufflehog_output.json || EXIT_CODE=$?
+                        trufflehog filesystem . -x exclude.txt --fail --no-update --json > trufflehog_output.json || EXIT_CODE=$?
 
                         # If secrets found (exit code 183) or other errors
                         if [ "${EXIT_CODE:-0}" -eq 183 ]; then
