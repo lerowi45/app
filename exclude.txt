@@ -1,0 +1,5 @@
+\.git #Contains Git metadata
+venv/ #Python virtual enevironment
+node_modules/  #JavaScript / Node.js dependencies
+.*\.pyc #Python bytecode files,
+package-lock\.json #Node.js dependency lock file
