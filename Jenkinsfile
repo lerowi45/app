@@ -2,7 +2,7 @@ pipeline {
     agent { label 'DevSecOps-Agent' }
 
     environment {
-        GITHUB_REPO = 'git@github.com:lerowi45/javascript-app.git'
+        GITHUB_REPO = 'git@github.com:lerowi45/app.git'
     }
 
     stages {
