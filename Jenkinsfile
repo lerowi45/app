@@ -74,6 +74,7 @@ pipeline {
                             echo "4️⃣ Commit and push your changes again."
                             echo ""
                             echo "🔗 Docs: https://nasa-ammos.github.io/slim/continuous-testing/starter-kits/#detect-secrets"
+                            rm -f .secrets.new && rm -f baseline_2
                             exit 1
                         else
                             echo "✅ Great! No new secrets found."
@@ -101,7 +102,7 @@ pipeline {
 
                         # If secrets found (exit code 183) or other errors
                         if [ "${EXIT_CODE:-0}" -eq 183 ]; then
-                        echo "❌ TruffleHog detected secrets!"
+                        echo "❌ Trufflehog detected secrets!"
 
                         # Parse line-by-line JSON safely
                         while IFS= read -r line; do

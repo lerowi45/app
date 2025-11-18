@@ -1,5 +1,31 @@
-\.git #Contains Git metadata
-venv/ #Python virtual enevironment
-node_modules/  #JavaScript / Node.js dependencies
-.*\.pyc #Python bytecode files,
-package-lock\.json #Node.js dependency lock file
+#####Python files to ignore#####
+# Python virtual enevironment
+venv/
+\.venv 
+
+# Python bytecode files,
+.*\.pyc 
+
+# Compiled python bytecode directory
+__pycache__/
+
+
+
+#####JavaScript files to ignore#####
+# JavaScript / Node.js dependencies
+node_modules/
+
+# Node.js dependency lock file
+package-lock\.json 
+
+
+
+#####Git files to ignore#####
+# Contains Git metadata
+\.git
+
+
+
+##### Other files to ignore #####
+# exclude baseline file used by detect-secrets
+.secrets.baseline
