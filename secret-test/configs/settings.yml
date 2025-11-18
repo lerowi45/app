@@ -1,0 +1,7 @@
+# settings.yml (fake)
+smtp:
+  user: "admin@example.com"
+  password: "super-secret-FAKE-PASS"
+third_party:
+  api_key: "FAKE-4c5b-1234-abcd"
+  private_jwt: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.FAKE.PAYLOAD"
